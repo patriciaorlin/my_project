@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    @include media-breakpoint-only(xs) { ... }
+    @include media-breakpoint-only(sm) { ... }
+    @include media-breakpoint-only(md) { ... }
+    @include media-breakpoint-only(lg) { ... }
+    @include media-breakpoint-only(xl) { ... }
+    .card{
+      border: 1px solid #ccc;
+      margin-left: 450px;
+      margin-right: 450px;	
+    }
+    button{
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <div w3-include-html="include/nav.html"></div>
+	<!--Section: Live preview-->
+<section class="form-light">
+
+  <!--Form without header-->
+  <div class="card">
+
+    <div class="card-body mx-4">
+
+      <!--Header-->
+      <div class="text-center">
+        <h3 class="pink-text mb-5"><strong>Sign up</strong></h3>
+      </div>
+
+      <!--Body-->
+      <div id="myform" class="md-form">
+        <input type="text" id="Form-email2" class="form-control">
+        <label for="Form-email2">Your email</label>
+      </div>
+
+      <div class="md-form pb-3">
+        <input type="password" id="Form-pass2" class="form-control">
+        <label for="Form-pass2">Your password</label>
+</div>
+      <!--Grid row-->
+      <div class="row d-flex align-items-center mb-4">
+
+        <!--Grid column-->
+        <div class="col-md-3 col-md-6 text-center">
+          <button type="submit" class="btn btn-dark btn-block btn-rounded z-depth-1">Login</button>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+    </div>
+
+    <!--Footer-->
+    <div class="footer pt-3 mdb-color lighten-3">
+
+      <div class="row d-flex justify-content-center">
+        <p class="font-small white-text mb-2 pt-3">or Sign up with:</p>
+      </div>
+
+      <div class="row mt-2 mb-3 d-flex justify-content-center">
+        <!--Facebook-->
+        <a class="fa-lg p-2 m-2 fb-ic"><i class="fab fa-facebook-f white-text fa-lg"> </i></a>
+        <!--Twitter-->
+        <a class="fa-lg p-2 m-2 tw-ic"><i class="fab fa-twitter white-text fa-lg"> </i></a>
+        <!--Google +-->
+        <a class="fa-lg p-2 m-2 gplus-ic"><i class="fab fa-google-plus-g white-text fa-lg"> </i></a>
+      </div>
+
+    </div>
+
+  </div>
+  <!--/Form without header-->
+
+</section>
+<!--Section: Live preview-->
+				</div>
+			</div>
+
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="javascript/include.js"></script>
+  <script>includeHTML();</script>
+	</body>
+</html>

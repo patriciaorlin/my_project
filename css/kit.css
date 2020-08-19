@@ -1,0 +1,14 @@
+.gallery h1{
+	color: red;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+.gallery-grids{
+	padding: 0px 15px;
+}
+.gallery-grid-img{
+	padding: 0px;
+}

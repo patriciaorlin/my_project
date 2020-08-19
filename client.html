@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Client</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style>
+		.container{
+			border: 1px solid #ccc;
+			border-top-left-radius: 50px;
+			border-top-right-radius: 50px;
+			border-bottom-left-radius: 50px;
+			border-bottom-right-radius: 50px;
+			width: 500px;
+			 height: 550px;
+		}
+		h3{
+			text-align: center;
+			letter-spacing: 2px;
+		}
+	</style>
+</head>
+<body>
+	<div w3-include-html="include/nav.html"></div> 
+	<div class="container" style="width: 550px;height: 600px;">
+		<h3>New client</h3>
+			 <div class="form-row">
+			 	<div class="col-md-6 mb-4 md-form">
+					<label for="fname">First name</label>
+					    <input type="first name" class="form-control">
+				</div>
+				<div class="col-md-6 mb-4 md-form">
+					<label for="lname">Last name</label>
+					    <input type="last name" class="form-control">
+				</div>
+				<div class="col-md-6 mb-4 md-form">
+					<label for="user-name">User name</label>
+					    <input type="user-name" class="form-control">
+				</div>
+			    <div class="col-md-6 mb-4 md-form">
+					<label for="phonenumber">phone number</label>
+						<input type="phonenumber" class="form-control">
+				</div>
+				<div class="form-row">
+				<div class="col-md-6 mb-4 md-form">
+				   <label for="password">Password</label>
+						<input type="password" class="form-control">
+				</div>
+			    <div class="col-md-6 mb-4 md-form">
+				    <label for="date">Date of birth</label>
+					    <input type="date" class="form-control">
+				</div>
+				<div class="col-md-6 mb-4 md-form">
+					<label for="country">Country</label>
+		      <select class="custom-select browser-default" required>
+		      <option value="Uganda">Uganda</option>
+		      <option value="Kenya">Kenya</option>
+		      <option value="USA">USA</option>
+		      <option value="Tanzania">Tanzania</option>
+		      <option value="other">Other</option>
+		    </select>
+		</div>
+		</div>
+				 <div class="col-md-3 col-md-6 text-center">
+		          <button type="submit" class="btn btn-dark btn-block btn-rounded z-depth-1 btn-active" style="margin-top: 10px;margin-left: 100px;">Submit</button>
+		        </div>				
+			</form>
+		</div>
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="javascript/include.js"></script>
+  <script>includeHTML();</script> 
+	</body>
+</html>

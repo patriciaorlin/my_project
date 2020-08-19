@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Orine</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+ /* Fixed sidenav, height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+  #crown{
+    color: green;
+    font-size: 30px;
+  }
+  .navbar-nav{
+    font-size: 23px;
+  color: #818181;
+  }
+  .navbar-brand{
+    font-size: 28px;
+    font-family: red-serif;
+  }
+  #poy{
+    background-color: black;
+  }
+  .nav-item{
+    list-style: none;
+  }
+  .navbar-nav .nav-link-active{
+    background-color: white;
+  }
+  </style>
+    <body>
+      <div>
+
+<div w3-include-html="include/nav.html"></div> 
+ <div class="sidenav">
+  <a href="new.html">New product</a>
+  <a href="client.html">New client</a>
+  <a href="agent.html">New agent</a>
+  <a href="product.html">Products</a>
+  <a href="contact.html">Contact</a>
+</div>
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>  
+<script src="javascript/include.js"></script>
+<script>includeHTML();</script> 
+</body>
+</html>

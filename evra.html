@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.box{background-color: lime; width: 150px; height: 70px; }
+		.box:nth-child(2){ margin-top: -55px; }
+		.box:nth-child(3){ margin-top: -70px; }
+		.box:nth-child(4){ margin-top: -70px; }
+		.box:nth-child(5){ margin-top: -70px; }
+		.box:nth-child(6){ margin-top: -70px; }
+		.main{ background-color: blue; width: 1200px; height: 500px; }
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="box" id="first"></div>
+		<div class="box" id="second"></div>
+		<div class="box" id="third"></div>
+		<div class="box" id="forth"></div>
+		<div class="box" id="fifth"></div>
+		<div class="box" id="sixth"></div>
+	</div>
+	
+
+	<script type="text/javascript" src="TweenMax.js"></script>
+	<script type="text/javascript">
+		const box = document.querySelectorAll('.box')
+		function anim(){
+		const b1 = document.querySelector('#first')
+		const b2 = document.querySelector('#second')
+		const b3 = document.querySelector('#third')
+		const b4 = document.querySelector('#forth')
+		const b5 = document.querySelector('#fifth')
+		const b6 = document.querySelector('#sixth')
+		const box = document.querySelectorAll('.box')
+
+		TweenMax.to(b1, 1, {x: 100})
+		TweenMax.to(b2, 3, {x: 900})
+		TweenMax.to(b3, 2, {x: 400})
+		TweenMax.to(b3, 2, {y: 130, delay: 3})
+		TweenMax.to(b4, 2, {x: 550})
+		TweenMax.to(b4, 2, {y: 250, delay: 2})
+		TweenMax.to(b4, 3, {y: 150,ease: 'Bounce.easeOut'})
+		TweenMax.to(b5, 2, {x: 100})
+		TweenMax.to(b5, 2, {y: 350, delay: 2})
+		TweenMax.to(b6, 2, {x: 900})
+		TweenMax.to(b6, 2, {y: 350, delay: 3})
+
+		TweenMax.from(box, 10, {opacity: 0})
+	};
+
+	setTimeout(anim, 5000)
+
+	</script>
+
+</body>
+</html>
